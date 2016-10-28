@@ -1,0 +1,3 @@
+<div class="mm_dropdown mm_<?= $this->id ?>">
+    <?= $this->buffer ?>
+</div>
