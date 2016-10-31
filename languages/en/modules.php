@@ -15,8 +15,3 @@
  * Backend modules
  */
 $GLOBALS['TL_LANG']['MOD']['mega_menu'] = ['Mega menu'];
-
-/**
- * Frontend modules
- */
-$GLOBALS['TL_LANG']['FMD']['mega_menu'] = ['Mega menu'];

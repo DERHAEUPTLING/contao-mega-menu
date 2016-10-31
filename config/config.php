@@ -26,11 +26,6 @@ array_insert(
 );
 
 /**
- * Frontend modules
- */
-$GLOBALS['FE_MOD']['navigationMenu']['mega_menu'] = 'Derhaeuptling\MegaMenu\FrontendModule';
-
-/**
  * Models
  */
 $GLOBALS['TL_MODELS']['tl_mega_menu'] = 'Derhaeuptling\MegaMenu\MenuModel';
