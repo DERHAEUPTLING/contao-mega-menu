@@ -1,5 +1,5 @@
 # contao-mega-menu
-Contao Plugin that integrates a flexible and adjustable MegaMenu into contao.
+Contao Plugin that integrates a flexible and adjustable MegaMenu into the Contao CMS.
 
 ## how?
 1. go to Layout -> Mega menu 
