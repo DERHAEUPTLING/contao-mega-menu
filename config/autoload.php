@@ -23,8 +23,8 @@ if (class_exists('NamespaceClassLoader')) {
  */
 \Contao\TemplateLoader::addFiles(
     [
-        'mega_menu_default'     => 'system/modules/mega_menu/templates/menus',
-        'nav_mega_menu_inside'  => 'system/modules/mega_menu/templates/navigation',
-        'nav_mega_menu_outside' => 'system/modules/mega_menu/templates/navigation',
+        'nav_mega_menu_inside'  	=> 'system/modules/mega_menu/templates/navigation',
+        'nav_mega_menu_outside' 	=> 'system/modules/mega_menu/templates/navigation',
+        'mega_menu_default'     	=> 'system/modules/mega_menu/templates/menus',
     ]
 );

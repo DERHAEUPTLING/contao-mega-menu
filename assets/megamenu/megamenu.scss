@@ -1,0 +1,55 @@
+/*!
+ * mega menu layout
+ * optimiced for Contao Official Demo Theme
+ */
+.mod_navigation {
+	&.dropdown {
+		overflow: visible;
+	}
+	li.mm_container {
+		> a,
+		> span { 
+			position: relative;
+		}
+		&:hover > a:after,
+		&:hover > span:after {  /* hide (overlay)border bottom of main menu */
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -3px;
+			height: 3px;
+			background-color: #F4F2F0;
+			z-index: 110;
+		}
+
+		.mm_dropdown {
+			display: none;
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: 100;
+
+			
+			> .inner {
+				// margin-top: 1.2rem;
+				padding: 1rem 2rem;
+
+				border: 1px solid #E5DFDC;
+				// border-bottom: 3px solid #333;
+				background-color: rgba(#F4F2F0, .95);
+
+				overflow: hidden;
+			}
+		}
+
+		&:hover .mm_dropdown {
+			display: block;
+		}
+	}
+
+	.mm_dropdown {
+		/* custom styles for content elements */
+	    
+	}
+}
