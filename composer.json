@@ -22,7 +22,7 @@
         "contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
     },
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "Derhaeuptling\\MegaMenu\\": "system/modules/mega_menu/src/"
         }
     },
