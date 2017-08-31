@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Derhaeuptling\\MegaMenu\\": "system/modules/mega_menu/src/"
+            "Derhaeuptling\\MegaMenu\\": "src/"
         }
     },
     "replace": {
