@@ -7,8 +7,6 @@
             <li class="<?= trim($item['class'] . ' ' . $extraClass) ?>">
                 <span class="<?= $item['class'] ?>"<?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?>><?= $item['link'] ?></span>
 
-                <?= $item['subitems'] ?>
-
                 <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])): ?>
                     <?php
                     $GLOBALS['TL_CSS'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.scss||static';
@@ -22,7 +20,6 @@
         <?php else: ?>
             <li<?php if ($item['class'] || $extraClass) echo ' class="' . trim($item['class'] . ' ' . $extraClass) . '"'; ?>>
                 <a href="<?= $item['href'] ?: './' ?>" title="<?= $item['pageTitle'] ?: $item['title'] ?>"<?php if ($item['class']) echo ' class="' . $item['class'] . '"'; ?><?php if ($item['accesskey']) echo ' accesskey="' . $item['accesskey'] . '"'; ?><?php if ($item['tabindex']) echo ' tabindex="' . $item['tabindex'] . '"'; ?><?php if ($item['nofollow']) echo ' rel="nofollow"'; ?><?= $item['target'] ?><?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?>><?= $item['link'] ?></a>
-
 
                 <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])): ?>
                     <?php
