@@ -21,7 +21,7 @@ $GLOBALS['TL_DCA']['tl_mega_menu'] = [
         'dataContainer'    => 'Table',
         'enableVersioning' => true,
         'switchToEdit'     => true,
-        'ctable'           => 'tl_content',
+        'ctable'           => ['tl_content'],
         'onload_callback'  => [
             ['Derhaeuptling\MegaMenu\DataContainer', 'displayHint'],
         ],
