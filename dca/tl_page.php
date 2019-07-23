@@ -22,14 +22,14 @@ $GLOBALS['TL_DCA']['tl_page']['palettes']['regular']            = str_replace(
 );
 $GLOBALS['TL_DCA']['tl_page']['palettes']['__selector__'][]     = 'megamenu_enable';
 $GLOBALS['TL_DCA']['tl_page']['palettes']['redirect']            = str_replace(
-    'description;',
-    'description;{megamenu_legend},megamenu_enable;',
+    'pageTitle;',
+    'pageTitle;{megamenu_legend},megamenu_enable;',
     $GLOBALS['TL_DCA']['tl_page']['palettes']['redirect']
 );
 $GLOBALS['TL_DCA']['tl_page']['palettes']['__selector__'][]     = 'megamenu_enable';
 $GLOBALS['TL_DCA']['tl_page']['palettes']['forward']            = str_replace(
-    'description;',
-    'description;{megamenu_legend},megamenu_enable;',
+    'pageTitle;',
+    'pageTitle;{megamenu_legend},megamenu_enable;',
     $GLOBALS['TL_DCA']['tl_page']['palettes']['forward']
 );
 $GLOBALS['TL_DCA']['tl_page']['subpalettes']['megamenu_enable'] = 'megamenu_hint,megamenu_menu';
