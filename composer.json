@@ -1,7 +1,7 @@
 {
     "name": "derhaeuptling/contao-mega-menu",
     "description": "Mega menu extension for Contao Open Source CMS",
-    "keywords": ["contao", "mega", "menu", "navigation"],
+    "keywords": ["contao", "mega", "menu", "mega menu", "navigation"],
     "type": "contao-module",
     "license": "LGPL-3.0+",
     "authors": [
@@ -17,9 +17,8 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "contao/core-bundle": "~3.5 || ~4.3",
-        "contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
+        "php": ">=5.4",
+        "contao/core-bundle": "~4.4"
     },
     "autoload": {
         "psr-0": {

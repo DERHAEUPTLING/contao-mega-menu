@@ -1,0 +1,43 @@
+<ul class="<?= $this->level ?>">
+    <?php foreach ($this->items as $item) : ?>
+        <?php $extraClass = \Derhaeuptling\MegaMenu\Generator::has($item['id']) ? ('mm_container mm_container_onClickOnly mm_' . $item['id']) : ''; ?>
+
+        <?php if ($item['isActive']) : ?>
+            <li class="<?= trim($item['class'] . ' ' . $extraClass) ?>">
+                <strong class="<?php if ($extraClass) echo 'mm_link_onClickOnly'; ?> <?= $item['class'] ?>" <?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?>><?= $item['link'] ?></strong>
+
+                <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])) : ?>
+                    <?php
+                    $GLOBALS['TL_CSS'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.scss||static';
+                    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.js|static';
+                    ?>
+                    <?= \Derhaeuptling\MegaMenu\Generator::generate($item['id']) ?>
+                <?php else : ?>
+                    <?= $item['subitems'] ?>
+                <?php endif; ?>
+            </li>
+        <?php else : ?>
+            <li<?php if ($item['class'] || $extraClass) echo ' class="' . trim($item['class'] . ' ' . $extraClass) . '"'; ?>>
+                <a href="<?= $item['href'] ?: './' ?>" 
+                    title="<?= $item['pageTitle'] ?: $item['title'] ?>" 
+                    class="<?php if ($extraClass) echo 'mm_link_onClickOnly'; ?> <?= $item['class'] ?>"
+                    <?php if ($item['accesskey']) echo ' accesskey="' . $item['accesskey'] . '"'; ?>
+                    <?php if ($item['tabindex']) echo ' tabindex="' . $item['tabindex'] . '"'; ?>
+                    <?php if ($item['nofollow']) echo ' rel="nofollow"'; ?>
+                    <?= $item['target'] ?><?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?>>
+                    <?= $item['link'] ?>
+                </a>
+
+                <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])) : ?>
+                    <?php
+                    $GLOBALS['TL_CSS'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.scss||static';
+                    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mega_menu/assets/megamenu/megamenu_onClickOnly.js|static';
+                    ?>
+                    <?= \Derhaeuptling\MegaMenu\Generator::generate($item['id']) ?>
+                <?php else : ?>
+                    <?= $item['subitems'] ?>
+                <?php endif; ?>
+                </li>
+            <?php endif; ?>
+        <?php endforeach; ?>
+</ul>

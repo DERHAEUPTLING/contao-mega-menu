@@ -4,7 +4,7 @@
 
         <?php if ($item['isActive']): ?>
             <li class="<?= trim($item['class'] . ' ' . $extraClass) ?>">
-                <span class="<?= $item['class'] ?>"<?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?>><?= $item['link'] ?></span>
+                <strong class="<?= $item['class'] ?>"<?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?>><?= $item['link'] ?></strong>
 
                 <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])): ?>
                     <?php \Derhaeuptling\MegaMenu\Generator::addOutsider(\Derhaeuptling\MegaMenu\Generator::generate($item['id'])) ?>
