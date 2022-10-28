@@ -2,25 +2,25 @@
 Contao Plugin that integrates a flexible and adjustable Mega Menu that drops down below the navigation.
 
 ## Features
-- Mega Menus can be added and managed in the Contao Layout section. \
+- Different Mega Menus can be added and managed in the Contao Layout section. \
 As many as needed.
 - Those Mega Menus can than be assigned to the Pages you need them for in the Contao Page Settings. \
 For any page different Mega Menus are possible.
 - In the Themes Naviation Module one of several prepared templates for the Mega Menu can be selected.
 
 ## Setup
-1. Navigate to Layout -> Mega Menü \
-Add at least on MegaMenu by clicking "new menu".\
+1. Navigate to Layout -> Mega Menu \
+Add at least on Mega Menu by clicking "new menu".\
 Inside this menu, you can add Contao content elements to build the content of the Mega Menu.
 
 2. Navigate to Layout -> Site Structure -> Edit Page \
 Go to the page Settings of the page, that will contain the mega menu.\
-In the section "Mega menu settings" check "Enable mega menu".\
+In the section "Mega Menu settings" check "Enable Mega Menu".\
 Select on of the Mega Menus you created in step (1.).
  
 1. Navigate to Layout -> Themes -> Modules\
-  Got to the frontend navigation module you want to output the Mega Menu.\
- Select one of the available mega menu templates as "navigation template".
+Go to the frontend navigation module you want to use for the Mega Menu.\
+Select one of the available Mega Menu templates as "navigation template".
 
 
 ## included navigation templates
@@ -35,7 +35,7 @@ Only opens on click, but ignores hover. Javascript is used.
   
   Use Cases of `nav_mega_menu_default_outside`:
   -  place the Mega Menu wherever needed.
-  -  Transion beetween Mega Menus or move them around
+  -  Transion beetween Mega Menus Contents or move whole Mega Menus around.
 
 - more Templates when requiered
  
