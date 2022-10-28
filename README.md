@@ -23,7 +23,8 @@ Go to the frontend navigation module you want to use for the Mega Menu.\
 Select one of the available Mega Menu templates as "navigation template".
 
 
-## included navigation templates
+## templates
+These Templates are available. 
 
 - `nav_mega_menu_default`\
  Simple css only full width solution.
