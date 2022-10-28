@@ -10,7 +10,6 @@
                 <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])): ?>
                     <?php
                     $GLOBALS['TL_CSS'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.scss||static';
-                    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.js|static';
                     ?>
                     <?= \Derhaeuptling\MegaMenu\Generator::generate($item['id']) ?>
                 <?php else: ?>
@@ -24,7 +23,6 @@
                 <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])): ?>
                     <?php
                     $GLOBALS['TL_CSS'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.scss||static';
-                    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.js|static';
                     ?>
                     <?= \Derhaeuptling\MegaMenu\Generator::generate($item['id']) ?>
                 <?php else: ?>
