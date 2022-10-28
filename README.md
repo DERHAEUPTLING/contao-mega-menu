@@ -34,7 +34,7 @@ Only opens on click, but ignores hover. Javascript is used.
   This prevents the CSS solution to work, Javascript is needed, but not included in this budle.\
   
   Use Cases of `nav_mega_menu_default_outside`:
-  -  place the Mega Menu whereever needed.
+  -  place the Mega Menu wherever needed.
   -  Transion beetween Mega Menus or move them around
 
 - more Templates when requiered
