@@ -5,12 +5,11 @@
 
         <?php if ($item['isActive']): ?>
             <li class="<?= trim($item['class'] . ' ' . $extraClass) ?>">
-                <span class="<?= $item['class'] ?>"<?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?>><?= $item['link'] ?></span>
+                <strong class="<?= $item['class'] ?>"<?php if (!empty($item['subitems'])) echo ' aria-haspopup="true"'; ?>><?= $item['link'] ?></strong>
 
                 <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])): ?>
                     <?php
                     $GLOBALS['TL_CSS'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.scss||static';
-                    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.js|static';
                     ?>
                     <?= \Derhaeuptling\MegaMenu\Generator::generate($item['id']) ?>
                 <?php else: ?>
@@ -24,7 +23,6 @@
                 <?php if (\Derhaeuptling\MegaMenu\Generator::has($item['id'])): ?>
                     <?php
                     $GLOBALS['TL_CSS'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.scss||static';
-                    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mega_menu/assets/megamenu/megamenu.js|static';
                     ?>
                     <?= \Derhaeuptling\MegaMenu\Generator::generate($item['id']) ?>
                 <?php else: ?>
