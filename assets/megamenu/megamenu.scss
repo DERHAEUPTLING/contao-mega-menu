@@ -8,7 +8,8 @@
 	}
 	li.mm_container {
 		> a,
-		> span { 
+		> span,
+		> strong { 
 			position: relative;
 		}
 		&:not(.mm_container_onClickOnly):hover,
