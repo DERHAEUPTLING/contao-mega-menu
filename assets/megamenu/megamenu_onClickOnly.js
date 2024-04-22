@@ -7,8 +7,12 @@ window.addEventListener("DOMContentLoaded", () => {
   mm_links.forEach((link) => { 
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      mm_links.forEach(link => link.classList.remove('mm_isActive'));
-      link.classList.add('mm_isActive');
+      if (link.classList.contains('mm_isActive')) {
+        link.classList.remove('mm_isActive')
+      } else {
+        mm_links.forEach(link => link.classList.remove('mm_isActive'));
+        link.classList.add('mm_isActive');
+      }
     });
   });
 
@@ -18,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let isClickInside = false;
 
     mm_container.forEach(container => {
-      console.log("each test for outside");
+      // console.log("each test for outside");
       if (container.contains(event.target)) { isClickInside = true };
     })
   
